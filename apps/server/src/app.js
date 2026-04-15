@@ -11,14 +11,19 @@ import { notFound } from "./middleware/notFound.js";
 
 const app = express();
 
-// ✅ Middlewares
+// ✅ CORS FIX (VERY IMPORTANT)
 app.use(
   cors({
-    origin: env.clientUrl,
+    origin: [
+      "http://localhost:5173",
+      "https://www.faylofashion.com",
+      "https://gym-saas-client-he8t.vercel.app"
+    ],
     credentials: true
   })
 );
 
+// ✅ Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
