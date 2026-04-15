@@ -12,6 +12,13 @@
     "build": "npm run build --workspace client",
     "start": "npm run start --workspace server"
   },
+{
+  "name": "gym-membership-monitoring",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd apps/server && npm install"
+  }
+}
   "dependencies": {
     "crypto": "^1.0.1",
     "mongodb": "^7.1.1",
