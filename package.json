@@ -9,16 +9,11 @@
     "dev": "npm run dev --workspace server & npm run dev --workspace client",
     "dev:client": "npm run dev --workspace client",
     "dev:server": "npm run dev --workspace server",
-    "build": "npm run build --workspace client",
-    "start": "npm run start --workspace server"
+
+    "build": "cd apps/server && npm install",
+
+    "start": "node apps/server/src/server.js"
   },
-{
-  "name": "gym-membership-monitoring",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "cd apps/server && npm install"
-  }
-}
   "dependencies": {
     "crypto": "^1.0.1",
     "mongodb": "^7.1.1",
