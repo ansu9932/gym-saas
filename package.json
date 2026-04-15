@@ -12,10 +12,9 @@
 
     "build": "cd apps/server && npm install",
 
-    "start": "node apps/server/src/server.js"
+    "start": "node server.js"
   },
   "dependencies": {
-    "crypto": "^1.0.1",
     "mongodb": "^7.1.1",
     "node-cron": "^4.2.1",
     "nodemailer": "^8.0.5",
